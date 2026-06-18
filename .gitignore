@@ -1,0 +1,14 @@
+node_modules
+.mastra
+dist
+
+# LibSQL demo database (regenerated on every run)
+envs.db
+envs.db-shm
+envs.db-wal
+**/envs.db
+**/envs.db-shm
+**/envs.db-wal
+
+# Secrets
+.env

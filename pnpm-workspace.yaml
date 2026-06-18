@@ -1,0 +1,5 @@
+# pnpm 11 no longer reads the `pnpm` field from package.json, so the build-script
+# allowlist lives here. esbuild (pulled in transitively) needs to run its
+# postinstall, so allow it explicitly to avoid ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  esbuild: true
